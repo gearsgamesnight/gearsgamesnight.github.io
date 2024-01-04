@@ -10,11 +10,17 @@
             padding: 0; /* Remove default padding */
         }
 
+        .image-container {
+            display: flex; /* Use flexbox to create a horizontal layout */
+            justify-content: space-around; /* Distribute space around images */
+            align-items: center; /* Align images vertically at the center */
+            padding: 20px; /* Add some padding for spacing */
+            background-color: #f0f0f0; /* Optional background color */
+        }
+
         img {
-            width: 100%; /* Make the image take up the full width of its container */
-            max-width: 400px; /* Set a maximum width for the image */
-            display: block; /* Ensure the image is treated as a block element */
-            margin: 0 auto; /* Center the image horizontally */
+            max-width: 100%; /* Set a maximum width for each image */
+            height: auto; /* Maintain aspect ratio */
         }
 
         /* Add additional styles as needed */
@@ -22,8 +28,14 @@
 </head>
 <body>
 
-    <!-- Image added using the img element -->
-    <img src="docs/assets/gears_image.jpg">
+    <div class="image-container">
+
+        <!-- Image 1 -->
+        <img src="docs/assets/bishop.gif">
+
+        <!-- Image 2 -->
+        <img src="docs/assets/sonic.gif">
+    </div>
 
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
