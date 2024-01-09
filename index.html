@@ -3,45 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
     <style>
         body {
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .image-container {
-            display: flex; /* Use flexbox to create a horizontal layout */
-            justify-content: space-around; /* Distribute space around images */
-            align-items: center; /* Align images vertically at the center */
-            padding: 20px; /* Add some padding for spacing */
-            background-color: #f0f0f0; /* Optional background color */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px; /* Adjust for the padding */
+        }
+
+        .col {
+            flex: 1;
+            padding: 10px;
         }
 
         img {
-            max-width: 100%; /* Set a maximum width for each image */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%;
+            height: auto;
         }
-
-        /* Add additional styles as needed */
     </style>
+    <title>Your GitHub Page</title>
 </head>
 <body>
 
-    <div class="image-container">
-
-        <!-- Image 1 -->
-        <img src="docs/assets/gnight.jpg">
-
-        <!-- Image 2 -->
-        <img src="docs/assets/gears.gif">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="docs/assets/gnight.jpg">
+        </div>
+        <div class="col">
+            <img src="docs/assets/gears.gif">
+        </div>
     </div>
 
-    <h1>Game 1: Pipes</h1>
-    <p>1.sdfsd
-	2.sfsdf</p>
+    <div class="row">
+        <div class="col text-block">
+            <img src="docs/assets/pipes.jpg">
+            <p>Pipes <br>
+		1. You must not use your pipe until you "tag" (hit pipe) against the opponent's spawn back wall <br> 
+		2. Once the spawn has been tagged you are now weapons free and are free to attack opponent <br> 
+		3. If you are killed before tagging and are re-spawned you are immediately weapons free </p>
+        </div>
+    </div>
 
-    <!-- Add your additional content here -->
+    <div class="row">
+        <div class="col text-block">
+	    <img src="docs/assets/bishop.gif">
+            <p>Brennan <br>
+		1. Basically Arms Race except you MUST do all you can to down the bots and melee from behind (Kick up the arse) </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-block">
+	    <img src="docs/assets/apples.png">
+            <p>Brennan <br>
+		1. Basically Arms Race except you MUST do all you can to down the bots and melee from behind (Kick up the arse) </p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
